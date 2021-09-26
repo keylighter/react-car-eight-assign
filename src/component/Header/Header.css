@@ -1,0 +1,23 @@
+.header-section{
+    text-align: center;
+    padding-bottom: 30px;   
+    padding-top: 30px; 
+    background-color: linen;
+
+}
+.navbar{
+    background-color: brown;
+    padding: 18px;
+}
+.navpoint{
+    color: cornsilk;
+    width: 7px;
+    text-decoration: none;
+    text-align: start;
+    margin-right: 20px;
+    padding: 18px;
+}
+.navpoint:hover{
+    background-color: ghostwhite;
+    color: black;
+}

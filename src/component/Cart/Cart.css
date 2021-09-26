@@ -1,0 +1,26 @@
+.cart-section{
+    text-align: center;
+    border: 2px solid rgb(176, 177, 119);
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color:rgb(250, 237, 203);
+}
+.cart-button{
+    font-weight:900;
+    color: rgba(8, 8, 8, 0.719);
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(250, 127, 127);
+    
+}
+.cart-button:hover{
+    background-color: rgba(8, 8, 8, 0.719);
+    color: rgb(250, 127, 127);
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.name-list{
+    
+font-weight: 500;
+}

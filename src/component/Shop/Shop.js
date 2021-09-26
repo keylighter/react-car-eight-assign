@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
+//IMPORT CARS FILE
 import Cars from '../Cars/Cars';
+//IMPORT CART FILE
 import Cart from '../Cart/Cart';
+//CSS FILE
 import './Shop.css';
 
 
 const Shop = () => {
-
+    // SETTING CARS STATE
     const [cars, setCars] = useState([]);
+    //SETTING CART STATE
     const [cart, setCart] = useState([]);
 
+    // FETCHING DATA
     useEffect(() => {
         fetch('./cars.json')
             .then(res => res.json())
@@ -16,11 +21,12 @@ const Shop = () => {
 
     }, []);
 
+    // SETTING EVENT HANLDER FOR CAR BUTTONS
     const handleToCart = (car) => {
         const newCart = [...cart, car]
         setCart(newCart);
 
-        // console.log(car);
+
     }
 
 
@@ -39,6 +45,7 @@ const Shop = () => {
             </div>
 
             <div className='cart-container'>
+
                 <Cart cart={cart} />
             </div>
         </div>

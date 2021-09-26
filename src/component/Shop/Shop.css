@@ -1,7 +1,10 @@
 .shop-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    margin-left: 40px;
+    padding-left: 40px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+    background-color: rgb(255, 224, 195);
    
 }
 
