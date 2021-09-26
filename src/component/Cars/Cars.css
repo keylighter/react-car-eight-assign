@@ -1,0 +1,10 @@
+.car-card{
+    padding-top: 7px;
+    border : 1px solid goldenrod;
+    border-radius: 10px;
+}
+.car-image{
+    /* text-align: center; */
+    width: 80px;
+    border-radius: 50%;
+}
