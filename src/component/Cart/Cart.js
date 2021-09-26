@@ -42,7 +42,7 @@ const Cart = (props) => {
 
             <h5>Your Choice List</h5>
             {
-                cart.map(car => <p key={car.id} className='name-list'>{car.name}</p>)
+                cart.map((car, i) => <p key={i} className='name-list'>{car.name}</p>)
             }
         </div>
     );

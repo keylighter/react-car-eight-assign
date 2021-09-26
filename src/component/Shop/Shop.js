@@ -36,8 +36,8 @@ const Shop = () => {
             <div className='cars-container'>
 
                 {
-                    cars.map(car => <Cars
-                        key={car.number}
+                    cars.map((car, i) => <Cars
+                        key={i}
                         handleToCart={handleToCart}
                         car={car} />)
                 }
