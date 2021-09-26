@@ -12,7 +12,7 @@ const Cars = (props) => {
             <p>Size: {size} </p>
             <p>Price:${price} </p>
             <p>Origin: {country}</p>
-            <button onClick={props.handleToCart()}>Add to cart</button>
+            <button onClick={() => props.handleToCart(props.car)}>Add to cart</button>
             <br /><br />
         </div>
     );

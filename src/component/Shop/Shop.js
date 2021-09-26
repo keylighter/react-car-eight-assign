@@ -17,7 +17,10 @@ const Shop = () => {
     }, []);
 
     const handleToCart = (car) => {
-        console.log('click');
+        const newCart = [...cart, car]
+        setCart(newCart);
+
+        // console.log(car);
     }
 
 
@@ -29,7 +32,7 @@ const Shop = () => {
                 {
                     cars.map(car => <Cars
                         handleToCart={handleToCart}
-                        key={car.name}
+                        key={car.number}
                         car={car} />)
                 }
 
